@@ -53,7 +53,7 @@ export default function SignupPage() {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <Link href="/" className="text-2xl font-bold text-gray-900">
-            Cloud<span className="text-amber-500">Trim</span>
+            Cloud<span className="text-amber-500">Activate</span>
           </Link>
           <h1 className="text-xl font-semibold text-gray-900 mt-6">Create your account</h1>
           <p className="text-gray-500 text-sm mt-1">Start with a free membership</p>

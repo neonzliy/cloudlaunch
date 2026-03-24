@@ -7,7 +7,7 @@ export default function HomePage() {
       {/* Nav */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur border-b border-gray-100 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-slate-800">Cloud<span className="text-amber-500">Trim</span></Link>
+          <Link href="/" className="text-xl font-bold text-slate-800">Cloud<span className="text-amber-500">Activate</span></Link>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
             <a href="#aws-activate" className="hover:text-slate-800 transition">AWS Activate</a>
             <a href="#how-it-works" className="hover:text-slate-800 transition">How It Works</a>
@@ -184,7 +184,7 @@ export default function HomePage() {
             </div>
             <div className="bg-white border border-gray-100 rounded-xl p-8">
               <div className="text-amber-500 text-3xl font-serif mb-4">&ldquo;</div>
-              <p className="text-gray-500 text-sm mb-6">Every dollar counts at this stage. CloudTrim helped us successfully apply and redeem valuable AWS Activate credits. Great support — they proactively followed up with both the AWS team and ourselves. Highly recommended!</p>
+              <p className="text-gray-500 text-sm mb-6">Every dollar counts at this stage. CloudActivate helped us successfully apply and redeem valuable AWS Activate credits. Great support — they proactively followed up with both the AWS team and ourselves. Highly recommended!</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-amber-100 text-amber-500 rounded-full flex items-center justify-center font-bold text-sm">RR</div>
                 <div><p className="font-semibold text-slate-800 text-sm">Rakesh Routhu</p><p className="text-xs text-gray-500">Co-founder &amp; CEO, SkyD AI &middot; United States</p></div>
@@ -284,13 +284,13 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-slate-900 border-t border-white/10 py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-white font-bold text-xl">Cloud<span className="text-amber-500">Trim</span></div>
+          <div className="text-white font-bold text-xl">Cloud<span className="text-amber-500">Activate</span></div>
           <div className="flex gap-6 text-sm text-gray-400">
             <a href="#how-it-works" className="hover:text-white transition">Our Model</a>
             <a href="#aws-activate" className="hover:text-white transition">AWS Activate</a>
             <Link href="/auth/signup" className="hover:text-white transition">Get Started</Link>
           </div>
-          <div className="text-sm text-gray-500">&copy; 2026 CloudTrim. All rights reserved.</div>
+          <div className="text-sm text-gray-500">&copy; 2026 CloudActivate. All rights reserved.</div>
         </div>
       </footer>
     </div>

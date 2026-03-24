@@ -66,7 +66,7 @@ export default function ApplyPage() {
       <nav className="bg-white border-b border-gray-200 px-6 py-4">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <Link href="/dashboard" className="text-xl font-bold text-gray-900">
-            Cloud<span className="text-amber-500">Trim</span>
+            Cloud<span className="text-amber-500">Activate</span>
           </Link>
           <Link href="/dashboard" className="text-sm text-gray-500 hover:text-gray-700">
             &larr; Back to Dashboard

@@ -32,7 +32,7 @@ export default async function AdminPage() {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="text-xl font-bold text-gray-900">
-              Cloud<span className="text-amber-500">Trim</span>
+              Cloud<span className="text-amber-500">Activate</span>
             </Link>
             <span className="text-xs bg-red-100 text-red-700 font-semibold px-2 py-0.5 rounded">Admin</span>
           </div>
