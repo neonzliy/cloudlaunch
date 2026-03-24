@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PricingSection } from "@/components/pricing-toggle";
+import { FAQSection } from "@/components/faq-section";
 
 export default function HomePage() {
   return (
@@ -241,41 +242,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="py-24 px-6 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">FAQ</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800">Frequently asked questions</h2>
-          </div>
-          <div className="space-y-4">
-            <details className="group bg-white border border-gray-200 rounded-xl">
-              <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 text-sm">What is AWS Activate?<svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></summary>
-              <p className="px-5 pb-5 text-sm text-gray-500">AWS Activate is a program by Amazon Web Services that provides startups with free credits, technical support, and training to help them build and grow on AWS. Credits can be used across 200+ AWS services.</p>
-            </details>
-            <details className="group bg-white border border-gray-200 rounded-xl">
-              <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 text-sm">How much credits can I get?<svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></summary>
-              <p className="px-5 pb-5 text-sm text-gray-500">It depends on your startup stage and plan. Free plan members can claim $1,000 via the Founders program. Standard members can access up to $5,000, and Premium/Enterprise members up to $10,000 or more through the Portfolio program.</p>
-            </details>
-            <details className="group bg-white border border-gray-200 rounded-xl">
-              <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 text-sm">What can I use the credits for?<svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></summary>
-              <p className="px-5 pb-5 text-sm text-gray-500">Credits can be applied to most AWS services including EC2, S3, Lambda, RDS, CloudFront, and more. Use them for hosting, databases, AI/ML, compute, storage, and virtually any cloud workload.</p>
-            </details>
-            <details className="group bg-white border border-gray-200 rounded-xl">
-              <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 text-sm">How long does the approval process take?<svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></summary>
-              <p className="px-5 pb-5 text-sm text-gray-500">Most applications are reviewed and approved within 5-10 business days. Our team helps you prepare a strong application to maximize your chances of approval.</p>
-            </details>
-            <details className="group bg-white border border-gray-200 rounded-xl">
-              <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 text-sm">Do the credits expire?<svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></summary>
-              <p className="px-5 pb-5 text-sm text-gray-500">Yes, AWS Activate credits typically expire 1-2 years after issuance, depending on the program tier. We&apos;ll help you plan your usage to maximize value.</p>
-            </details>
-            <details className="group bg-white border border-gray-200 rounded-xl">
-              <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 text-sm">What happens after I subscribe?<svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></summary>
-              <p className="px-5 pb-5 text-sm text-gray-500">After subscribing, we&apos;ll guide you through the AWS Activate application process. This includes drafting your application, reviewing it, and providing 1-on-1 support until your credits are approved and loaded.</p>
-            </details>
-          </div>
-        </div>
-      </section>
+      <FAQSection />
 
       {/* Founder Resources */}
       <section className="py-24 px-6">
