@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: "How much credits can I get and how long does approval take?",
-    a: "Credit amounts depend on your plan: Free members get $1,000 (Founders), Standard gets up to $5,000 (Portfolio), Premium up to $10,000 (Portfolio+), and Enterprise up to $100,000 (Portfolio Max). Most applications are reviewed and approved within 5-10 business days. AWS makes the final approval decision.",
+    a: "Credit amounts range from $1,000 (Founders) to $100,000 (Portfolio Max) depending on your startup stage. Most applications are reviewed and approved within 5-10 business days. AWS makes the final approval decision. There are no upfront costs — we only charge 25% of approved credits.",
   },
   {
     q: "Do the credits expire? What happens to unused credits?",
@@ -21,15 +21,19 @@ const FAQS = [
   },
   {
     q: "Are there minimum commitments? Can I cancel anytime?",
-    a: "No minimum commitments. You can cancel your subscription anytime. Your AWS credits remain on your account regardless — they're applied directly by AWS and aren't affected by your membership status. The Free tier is free forever with no credit card required.",
+    a: "No minimum commitments and no upfront costs. You sign up for free, apply for free, and only pay our 25% success fee when your credits are approved and loaded. If we can't get you credits, you owe nothing.",
   },
   {
     q: "Do these credits come directly from AWS?",
     a: "Yes. Credits are issued through the official AWS Activate program. As an Activate Provider, we submit applications on your behalf, but AWS reviews and approves all credit allocations. The credits appear directly on your AWS billing console.",
   },
   {
-    q: "What happens after I subscribe?",
-    a: "After subscribing, you'll get access to your dashboard where you can submit an AWS Activate application. We'll help draft your application, review it for completeness, and submit it through our provider channel. You'll receive email updates at each stage until your credits are approved and loaded into your AWS account.",
+    q: "What's in it for you? How does CloudActivate make money?",
+    a: "Our pricing is success-based. We take 25% of the credit amount we help you secure. For example, if you receive $10,000 in AWS credits, our fee is $2,500. If we can't get you approved, you pay nothing. This means our incentives are fully aligned with yours.",
+  },
+  {
+    q: "What happens after I sign up?",
+    a: "After signing up, you'll get access to your dashboard where you can submit an AWS Activate application. We'll help draft your application, review it for completeness, and submit it through our provider channel. You'll receive email updates at each stage until your credits are approved and loaded into your AWS account.",
   },
 ];
 

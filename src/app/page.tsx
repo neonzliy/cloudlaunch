@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { PricingSection } from "@/components/pricing-toggle";
 import { FAQSection } from "@/components/faq-section";
 
 export default function HomePage() {
@@ -143,7 +142,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-amber-500 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-amber-500/25"><svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg></div>
               <p className="text-amber-500 text-xs font-bold uppercase tracking-wide mb-1">Step 1</p>
               <h3 className="font-semibold text-slate-800 mb-2">Sign Up</h3>
-              <p className="text-sm text-gray-500">Choose a subscription plan and create your account.</p>
+              <p className="text-sm text-gray-500">Create a free account — no credit card needed.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-500 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-amber-500/25"><svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
@@ -206,13 +205,46 @@ export default function HomePage() {
 
       {/* Pricing */}
       <section id="pricing" className="py-24 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
             <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">PRICING</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Simple, transparent plans</h2>
-            <p className="text-lg text-gray-500">Choose the plan that fits your stage. All paid plans include AWS Activate application support.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Success-based pricing</h2>
+            <p className="text-lg text-gray-500 max-w-2xl mx-auto">Free to sign up. Free to apply. You only pay when your credits are approved.</p>
           </div>
-          <PricingSection />
+
+          <div className="bg-white rounded-2xl border border-gray-200 p-10 md:p-14 text-center shadow-sm">
+            <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-sm font-medium px-4 py-2 rounded-full mb-8">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+              No upfront costs
+            </div>
+            <h3 className="text-6xl md:text-7xl font-bold text-slate-800 mb-3">25%</h3>
+            <p className="text-xl text-gray-500 mb-8">of approved credit amount</p>
+            <div className="grid md:grid-cols-3 gap-6 mb-10 text-left max-w-2xl mx-auto">
+              <div className="flex gap-3">
+                <svg className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                <div><p className="font-medium text-slate-800 text-sm">Free signup</p><p className="text-xs text-gray-500">No credit card required</p></div>
+              </div>
+              <div className="flex gap-3">
+                <svg className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                <div><p className="font-medium text-slate-800 text-sm">Free application</p><p className="text-xs text-gray-500">We handle everything</p></div>
+              </div>
+              <div className="flex gap-3">
+                <svg className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                <div><p className="font-medium text-slate-800 text-sm">Pay on success</p><p className="text-xs text-gray-500">Only when credits land</p></div>
+              </div>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 mb-8 max-w-lg mx-auto">
+              <p className="text-sm text-gray-500 mb-2">Example: You receive $10,000 in AWS credits</p>
+              <div className="flex items-center justify-center gap-4">
+                <div><p className="text-2xl font-bold text-slate-800">$7,500</p><p className="text-xs text-gray-500">You keep</p></div>
+                <div className="text-gray-300 text-2xl">+</div>
+                <div><p className="text-2xl font-bold text-amber-500">$2,500</p><p className="text-xs text-gray-500">Our fee</p></div>
+              </div>
+            </div>
+            <Link href="/auth/signup" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/25">
+              Get Started Free →
+            </Link>
+          </div>
         </div>
       </section>
 

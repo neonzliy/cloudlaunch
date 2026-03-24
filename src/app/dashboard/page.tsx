@@ -2,8 +2,6 @@ import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { SignOutButton } from "@/components/sign-out-button";
-import { ManageBillingButton } from "@/components/manage-billing-button";
-import { UpgradeButton } from "@/components/upgrade-button";
 
 const PLAN_DISPLAY = {
   free: { label: "Free", credits: "$1,000", color: "bg-gray-100 text-gray-700" },
@@ -85,10 +83,7 @@ export default async function DashboardPage() {
                 </p>
               )}
             </div>
-            <div className="flex gap-3">
-              {plan === "free" && <UpgradeButton />}
-              {plan !== "free" && <ManageBillingButton />}
-            </div>
+
           </div>
         </div>
 
