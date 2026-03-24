@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CloudLaunch - AWS Activate Credits for Startups",
+  title: "CloudTrim - AWS Activate Credits for Startups",
   description: "Offset your startup's AWS bills with up to $100,000 in credits. Official AWS Activate Provider.",
 };
 
