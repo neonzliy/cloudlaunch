@@ -21,32 +21,14 @@ export const stripe = new Proxy({} as Stripe, {
 
 export const PLANS = {
   free: {
-    name: "Free",
+    name: "Founders",
     credits: "$1,000",
     tier: "founders",
   },
-  standard: {
-    name: "Standard",
-    credits: "$5,000",
-    tier: "portfolio",
-    priceIds: {
-      yearly: process.env.STRIPE_PRICE_STANDARD_YEARLY!,
-      monthly: process.env.STRIPE_PRICE_STANDARD_MONTHLY!,
-    },
-  },
-  premium: {
-    name: "Premium",
+  portfolio: {
+    name: "Portfolio",
     credits: "$10,000",
-    tier: "portfolio_plus",
-    priceIds: {
-      yearly: process.env.STRIPE_PRICE_PREMIUM_YEARLY!,
-      monthly: process.env.STRIPE_PRICE_PREMIUM_MONTHLY!,
-    },
-  },
-  enterprise: {
-    name: "Enterprise",
-    credits: "$100,000",
-    tier: "portfolio_max",
+    tier: "portfolio",
   },
 } as const;
 

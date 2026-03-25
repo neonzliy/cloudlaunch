@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "CloudActivate - AWS Activate Credits for Startups",
-  description: "Offset your startup's AWS bills with up to $100,000 in credits. Official AWS Activate Provider.",
+  description: "Get up to $10,000 in free AWS credits for your startup. Official AWS Activate Provider.",
 };
 
 export default function RootLayout({

@@ -21,7 +21,7 @@ export default function HomePage() {
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Get up to <span className="text-amber-500">$100,000</span> in free AWS credits for your startup
+            Get up to <span className="text-amber-500">$10,000</span> in free AWS credits for your startup
           </h1>
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
             We handle the entire AWS Activate application process. You get the credits. No upfront cost, no risk.
@@ -107,27 +107,19 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How much can you get?</h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">Credit amounts depend on your startup stage. We help you identify the right tier and maximize your allocation.</p>
           </div>
-          <div className="grid md:grid-cols-4 gap-5">
-            <div className="bg-white rounded-xl border border-gray-200 p-6 hover:border-amber-200 transition">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Founders</p>
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="bg-white rounded-xl border border-gray-200 p-8 hover:border-amber-200 transition">
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Activate Founders</p>
               <p className="text-3xl font-bold text-gray-900 mb-1">$1,000</p>
-              <p className="text-sm text-gray-500">For early-stage founders exploring AWS for the first time.</p>
+              <p className="text-sm text-amber-500 mb-3">in AWS credits</p>
+              <p className="text-sm text-gray-500">For self-funded startups exploring AWS for the first time. No provider affiliation required.</p>
             </div>
-            <div className="bg-white rounded-xl border border-gray-200 p-6 hover:border-amber-200 transition">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Portfolio</p>
-              <p className="text-3xl font-bold text-gray-900 mb-1">$5,000</p>
-              <p className="text-sm text-gray-500">For startups building their first product on AWS.</p>
-            </div>
-            <div className="bg-white rounded-xl border-2 border-amber-300 p-6 relative">
-              <div className="absolute -top-2.5 left-4 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">Popular</div>
-              <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">Portfolio+</p>
-              <p className="text-3xl font-bold text-gray-900 mb-1">$10,000</p>
-              <p className="text-sm text-gray-500">For startups with traction scaling their infrastructure.</p>
-            </div>
-            <div className="bg-white rounded-xl border border-gray-200 p-6 hover:border-amber-200 transition">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Portfolio Max</p>
-              <p className="text-3xl font-bold text-gray-900 mb-1">$100,000</p>
-              <p className="text-sm text-gray-500">For funded startups with significant AWS usage.</p>
+            <div className="bg-white rounded-xl border-2 border-amber-300 p-8 relative">
+              <div className="absolute -top-2.5 left-4 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">Recommended</div>
+              <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">Activate Portfolio</p>
+              <p className="text-3xl font-bold text-gray-900 mb-1">Up to $10,000</p>
+              <p className="text-sm text-amber-500 mb-3">in AWS credits</p>
+              <p className="text-sm text-gray-500">For startups affiliated with an Activate Provider like us. Higher credit amounts and faster processing.</p>
             </div>
           </div>
           <p className="text-center text-sm text-gray-400 mt-8">All credits are issued directly by AWS through the official Activate program. You keep full ownership of your AWS account.</p>
@@ -187,7 +179,7 @@ export default function HomePage() {
       <section className="py-20 px-6 bg-gray-900">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Stop paying full price for AWS</h2>
-          <p className="text-lg text-gray-400 mb-8">Check if your startup qualifies for up to $100,000 in free AWS credits. It takes 30 seconds.</p>
+          <p className="text-lg text-gray-400 mb-8">Check if your startup qualifies for up to $10,000 in free AWS credits. It takes 30 seconds.</p>
           <Link href="/auth/signup" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/25">
             Check Your Eligibility
           </Link>

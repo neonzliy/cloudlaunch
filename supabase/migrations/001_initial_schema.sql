@@ -30,7 +30,7 @@ CREATE TABLE activate_applications (
   user_id UUID REFERENCES profiles(id) ON DELETE CASCADE NOT NULL,
   aws_account_id TEXT,
   company_description TEXT,
-  credit_tier TEXT CHECK (credit_tier IN ('founders', 'portfolio', 'portfolio_plus', 'portfolio_max')),
+  credit_tier TEXT CHECK (credit_tier IN ('founders', 'portfolio')),
   requested_amount INT,
   approved_amount INT,
   status TEXT NOT NULL DEFAULT 'draft' CHECK (status IN (

@@ -4,10 +4,8 @@ import Link from "next/link";
 import { SignOutButton } from "@/components/sign-out-button";
 
 const PLAN_DISPLAY = {
-  free: { label: "Free", credits: "$1,000", color: "bg-gray-100 text-gray-700" },
-  standard: { label: "Standard", credits: "$5,000", color: "bg-blue-100 text-blue-700" },
-  premium: { label: "Premium", credits: "$10,000", color: "bg-amber-100 text-amber-700" },
-  enterprise: { label: "Enterprise", credits: "$100,000", color: "bg-purple-100 text-purple-700" },
+  free: { label: "Founders", credits: "$1,000", color: "bg-gray-100 text-gray-700" },
+  portfolio: { label: "Portfolio", credits: "$10,000", color: "bg-amber-100 text-amber-700" },
 } as const;
 
 const STATUS_DISPLAY: Record<string, { label: string; color: string }> = {

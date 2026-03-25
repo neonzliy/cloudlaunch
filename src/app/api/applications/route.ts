@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "All fields are required" }, { status: 400 });
   }
 
-  const validTiers = ["founders", "portfolio", "portfolio_plus", "portfolio_max"];
+  const validTiers = ["founders", "portfolio"];
   if (!validTiers.includes(credit_tier)) {
     return NextResponse.json({ error: "Invalid credit tier" }, { status: 400 });
   }

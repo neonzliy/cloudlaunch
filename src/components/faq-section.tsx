@@ -5,7 +5,7 @@ const FAQS = [
   },
   {
     q: "How much can I get?",
-    a: "It depends on your startup stage. Credit amounts range from $1,000 for early founders up to $100,000 for funded startups with significant AWS usage. When you sign up, we help you figure out which tier you qualify for.",
+    a: "AWS Activate has two tiers. Activate Founders gives self-funded startups $1,000 in credits. Activate Portfolio, which requires affiliation with a provider like us, offers up to $10,000. We help you figure out which tier fits and maximize your allocation.",
   },
   {
     q: "What does the process look like?",
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: "Am I eligible?",
-    a: "Most early-stage startups qualify. The main criteria: your company is less than 10 years old, has less than $100M in annual revenue, and has an active website. You also can't have previously received Activate credits at the same tier. Sign up to check instantly.",
+    a: "Most early-stage startups qualify. You need to be pre-Series B, founded within the last 10 years, have an active website or company profile, and have an AWS account on a paid tier plan. You also can't have previously received Activate credits at the same tier. Sign up to check instantly.",
   },
   {
     q: "Do the credits expire?",
