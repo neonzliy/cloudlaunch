@@ -1,35 +1,35 @@
 const FAQS = [
   {
+    q: "What is base261?",
+    a: "base261 is a startup launchpad that helps early-stage companies access cloud credits, technical resources, and founder community. Our flagship service helps startups apply for AWS Activate credits to offset cloud infrastructure costs.",
+  },
+  {
     q: "What is AWS Activate?",
-    a: "AWS Activate is an official program by Amazon that gives startups free credits to use across 200+ AWS services, including EC2, S3, Lambda, and RDS. The credits are applied directly to your AWS bill. As an Activate Provider, we help you apply for and receive these credits.",
+    a: "AWS Activate is an official program by Amazon that gives startups free credits to use across 200+ AWS services, including EC2, S3, Lambda, and RDS. The credits are applied directly to your AWS bill.",
   },
   {
     q: "How much can I get?",
-    a: "AWS Activate has two tiers. Activate Founders gives self-funded startups $1,000 in credits. Activate Portfolio, which requires affiliation with a provider like us, offers up to $10,000. We help you figure out which tier fits and maximize your allocation.",
+    a: "AWS Activate has two tiers. Activate Founders gives self-funded startups $1,000 in credits. Activate Portfolio, which requires affiliation with a provider, offers up to $10,000. We help you figure out which tier fits and put together the best application.",
   },
   {
     q: "What does the process look like?",
-    a: "After you sign up, you tell us a bit about your startup and your AWS usage. We draft your application, review it for completeness, and submit it through our provider channel. AWS typically reviews and approves applications within 5-10 business days. You get email updates at each stage.",
+    a: "After you join base261, you tell us a bit about your startup and your AWS usage. We help draft your application, review it for completeness, and guide you through submission. AWS typically reviews and approves applications within 5-10 business days.",
   },
   {
     q: "Will I keep full ownership of my AWS account?",
     a: "Yes. We never ask for admin access or root credentials. The credits are applied directly to your existing AWS account. You retain full ownership and control at all times.",
   },
   {
-    q: "Do the credits come directly from AWS?",
-    a: "Yes. Credits are issued through the official AWS Activate program. AWS reviews and approves all applications. The credits appear directly on your AWS billing console, not through a third party.",
-  },
-  {
     q: "What does this cost?",
-    a: "Nothing upfront. We charge 25% of the credit amount you receive, only after your credits are approved and loaded. For example, if you get $10,000 in credits, our fee is $2,500. If we can't get you approved, you pay nothing.",
+    a: "Nothing upfront. For cloud credits, we charge 25% of the credit amount you receive, only after your credits are approved and loaded. For example, if you get $10,000 in credits, our fee is $2,500. If we can't help you get approved, you pay nothing.",
   },
   {
     q: "Am I eligible?",
-    a: "Most early-stage startups qualify. You need to be pre-Series B, founded within the last 10 years, have an active website or company profile, and have an AWS account on a paid tier plan. You also can't have previously received Activate credits at the same tier. Sign up to check instantly.",
+    a: "Most early-stage startups qualify for AWS Activate. You need to be pre-Series B, founded within the last 10 years, have an active website or company profile, and have an AWS account on a paid tier plan. You also can't have previously received Activate credits at the same tier.",
   },
   {
-    q: "Do the credits expire?",
-    a: "Yes, AWS Activate credits typically expire 1-2 years after they're issued, depending on the tier. Unused credits stay on your account until expiration regardless of your CloudActivate status.",
+    q: "What other services does base261 offer?",
+    a: "Cloud credits are our flagship, and we're actively building out additional services including technical guidance (architecture reviews, infrastructure planning) and a founder community. Join now to get early access as we launch new offerings.",
   },
 ];
 
