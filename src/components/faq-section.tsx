@@ -1,48 +1,40 @@
-const FAQS = [
+const CREDITS_FAQS = [
   {
-    q: "What is base261?",
-    a: "base261 is a startup launchpad that helps early-stage companies access cloud credits, technical resources, and founder community. Our flagship service helps startups apply for AWS Activate credits to offset cloud infrastructure costs.",
+    q: "What cloud credit programs can you help with?",
+    a: "We currently help startups access AWS Activate credits, which offer between $1,000 and $10,000 depending on your startup stage. We're expanding to support additional cloud providers in the future.",
   },
   {
-    q: "What is AWS Activate?",
-    a: "AWS Activate is an official program by Amazon that gives startups free credits to use across 200+ AWS services, including EC2, S3, Lambda, and RDS. The credits are applied directly to your AWS bill.",
+    q: "How does the application process work?",
+    a: "After you join base261, you tell us about your startup and your cloud usage. We help draft your application, review it for completeness, and guide you through submission. The cloud provider reviews and approves all applications.",
   },
   {
-    q: "How much can I get?",
-    a: "AWS Activate has two tiers. Activate Founders gives self-funded startups $1,000 in credits. Activate Portfolio, which requires affiliation with a provider, offers up to $10,000. We help you figure out which tier fits and put together the best application.",
-  },
-  {
-    q: "What does the process look like?",
-    a: "After you join base261, you tell us a bit about your startup and your AWS usage. We help draft your application, review it for completeness, and guide you through submission. AWS typically reviews and approves applications within 5-10 business days.",
-  },
-  {
-    q: "Will I keep full ownership of my AWS account?",
-    a: "Yes. We never ask for admin access or root credentials. The credits are applied directly to your existing AWS account. You retain full ownership and control at all times.",
+    q: "Will I keep full ownership of my cloud account?",
+    a: "Yes. We never ask for admin access or root credentials. Credits are applied directly to your existing account. You retain full ownership and control at all times.",
   },
   {
     q: "What does this cost?",
-    a: "Nothing upfront. For cloud credits, we charge 25% of the credit amount you receive, only after your credits are approved and loaded. For example, if you get $10,000 in credits, our fee is $2,500. If we can't help you get approved, you pay nothing.",
+    a: "Nothing upfront. We charge 25% of the credit amount you receive, only after your credits are approved and loaded. For example, if you get $10,000 in credits, our fee is $2,500. If we can't help you get approved, you pay nothing.",
   },
   {
     q: "Am I eligible?",
-    a: "Most early-stage startups qualify for AWS Activate. You need to be pre-Series B, founded within the last 10 years, have an active website or company profile, and have an AWS account on a paid tier plan. You also can't have previously received Activate credits at the same tier.",
+    a: "Most early-stage startups qualify. Typical requirements include being pre-Series B, founded within the last 10 years, having an active website or company profile, and having a cloud account on a paid tier plan.",
   },
   {
-    q: "What other services does base261 offer?",
-    a: "Cloud credits are our flagship, and we're actively building out additional services including technical guidance (architecture reviews, infrastructure planning) and a founder community. Join now to get early access as we launch new offerings.",
+    q: "Do the credits expire?",
+    a: "Yes, cloud credits typically expire 1-2 years after they're issued, depending on the program. Unused credits stay on your account until expiration regardless of your base261 membership status.",
   },
 ];
 
-export function FAQSection() {
+export function CreditsFAQ() {
   return (
-    <section id="faq" className="py-20 px-6 bg-gray-50">
+    <section id="faq" className="py-20 px-6">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">FAQ</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Common questions</h2>
         </div>
         <div className="space-y-3">
-          {FAQS.map((faq) => (
+          {CREDITS_FAQS.map((faq) => (
             <details key={faq.q} className="group bg-white border border-gray-200 rounded-xl hover:shadow-sm transition">
               <summary className="flex items-center justify-between p-6 cursor-pointer font-semibold text-gray-900 text-[15px]">
                 {faq.q}
