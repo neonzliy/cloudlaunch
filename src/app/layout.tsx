@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "base261 - Startup Studio",
-  description: "base261 partners with early-stage founders, providing cloud infrastructure, technical guidance, and hands-on support from day zero.",
+  title: "base261 - Digital Innovation Studio",
+  description: "base261 is a digital innovation studio that incubates ideas, secures cloud infrastructure, and prepares startups for growth.",
 };
 
 export default function RootLayout({

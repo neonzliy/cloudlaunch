@@ -1,7 +1,6 @@
 import Link from "next/link";
+import { ContactForm } from "@/components/contact-form";
 import { CreditsFAQ } from "@/components/faq-section";
-
-const CALENDLY_URL = "https://calendly.com/base261/consultation";
 
 export default function CreditsPage() {
   return (
@@ -11,11 +10,11 @@ export default function CreditsPage() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold text-gray-900">base<span className="text-amber-500">261</span></Link>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
-            <Link href="/#model" className="hover:text-gray-900 transition">Our Model</Link>
-            <Link href="/#startups" className="hover:text-gray-900 transition">For Startups</Link>
+            <Link href="/#services" className="hover:text-gray-900 transition">Our Model</Link>
             <Link href="/credits" className="text-gray-900 font-medium">Cloud Credits</Link>
+            <a href="#contact" className="hover:text-gray-900 transition">Contact</a>
           </div>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition">Book a Free Call</a>
+          <a href="#contact" className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition">Free Consultation</a>
         </div>
       </nav>
 
@@ -32,10 +31,10 @@ export default function CreditsPage() {
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
             Most early-stage startups qualify for thousands in free cloud credits but never apply. We walk you through the process and handle the heavy lifting.
           </p>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/20">
-            Book a Free Consultation
+          <a href="#contact" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/20">
+            Get a Free Consultation
           </a>
-          <p className="text-sm text-gray-400 mt-4">15-minute call. We&apos;ll assess your eligibility and explain the process.</p>
+          <p className="text-sm text-gray-400 mt-4">We&apos;ll assess your eligibility and explain the process.</p>
         </div>
       </section>
 
@@ -84,7 +83,7 @@ export default function CreditsPage() {
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-xl font-bold">1</div>
               <h3 className="font-semibold text-gray-900 mb-2 text-lg">Free consultation</h3>
-              <p className="text-sm text-gray-500">Book a 15-minute call. We assess your eligibility and explain which credit programs fit your startup.</p>
+              <p className="text-sm text-gray-500">Reach out through our contact form. We assess your eligibility and explain which credit programs fit your startup.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-xl font-bold">2</div>
@@ -97,37 +96,49 @@ export default function CreditsPage() {
               <p className="text-sm text-gray-500">Once approved, credits appear directly on your cloud billing console. Most reviews take 5-10 business days.</p>
             </div>
           </div>
-          <div className="text-center mt-12">
-            <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-7 py-3.5 rounded-lg transition shadow-lg shadow-amber-500/20">
-              Book Your Free Call
-            </a>
-          </div>
         </div>
       </section>
 
       <CreditsFAQ />
 
-      {/* CTA */}
-      <section className="py-20 px-6 bg-gray-900">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Not sure if you qualify?</h2>
-          <p className="text-lg text-gray-400 mb-8">Most early-stage startups do. Book a free 15-minute call and we&apos;ll walk you through your options.</p>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/25">
-            Book a Free Consultation
-          </a>
-          <p className="text-sm text-gray-500 mt-4">No commitment. No credit card. Just a conversation.</p>
+      {/* Contact Form */}
+      <section id="contact" className="py-24 px-6 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">GET IN TOUCH</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Interested in cloud credits?</h2>
+              <p className="text-gray-500 leading-relaxed mb-6">
+                Tell us about your startup and we&apos;ll get back to you with a personalized assessment of which credit programs you qualify for.
+              </p>
+              <div className="space-y-3 text-sm text-gray-500">
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  No cost, no obligation
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  Response within 24 hours
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  You only pay if we get you approved
+                </div>
+              </div>
+            </div>
+            <ContactForm />
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-white/10 py-10 px-6">
+      <footer className="bg-gray-900 py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <Link href="/" className="text-white font-bold text-xl">base<span className="text-amber-500">261</span></Link>
           <div className="flex gap-6 text-sm text-gray-400">
-            <Link href="/#model" className="hover:text-white transition">Our Model</Link>
-            <Link href="/#startups" className="hover:text-white transition">For Startups</Link>
+            <Link href="/#services" className="hover:text-white transition">Our Model</Link>
             <Link href="/credits" className="hover:text-white transition">Cloud Credits</Link>
-            <a href="mailto:team@base261.com" className="hover:text-white transition">Contact</a>
+            <a href="mailto:team@base261.com" className="hover:text-white transition">team@base261.com</a>
           </div>
           <div className="text-sm text-gray-500">&copy; 2026 base261. All rights reserved.</div>
         </div>
