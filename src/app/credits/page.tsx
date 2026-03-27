@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { CreditsFAQ } from "@/components/faq-section";
 
+const CALENDLY_URL = "https://calendly.com/base261/consultation";
+
 export default function CreditsPage() {
   return (
     <div className="bg-white text-gray-900">
@@ -13,100 +15,92 @@ export default function CreditsPage() {
             <Link href="/#startups" className="hover:text-gray-900 transition">For Startups</Link>
             <Link href="/credits" className="text-gray-900 font-medium">Cloud Credits</Link>
           </div>
-          <Link href="/auth/signup" className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition">Check Eligibility</Link>
+          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition">Book a Free Call</a>
         </div>
       </nav>
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 text-sm font-medium px-4 py-2 rounded-full mb-8">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+            Free consultation, no commitment
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-            Cloud credits to fuel your startup
+            Let us help you get cloud credits for your startup
           </h1>
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
-            We help early-stage startups access cloud infrastructure credits and guide you through the application process. No upfront cost, no risk.
+            Most early-stage startups qualify for thousands in free cloud credits but never apply. We walk you through the process and handle the heavy lifting.
           </p>
-          <Link href="/auth/signup" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/20">
-            Check Your Eligibility
-          </Link>
-          <p className="text-sm text-gray-400 mt-4">Free to join. You only pay if we help you get approved.</p>
+          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/20">
+            Book a Free Consultation
+          </a>
+          <p className="text-sm text-gray-400 mt-4">15-minute call. We&apos;ll assess your eligibility and explain the process.</p>
+        </div>
+      </section>
+
+      {/* What you get */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">WHAT YOU GET</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Up to $10,000 in free cloud credits</h2>
+            <p className="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">Cloud providers like AWS offer credit programs for startups. We help you navigate the process and put together the strongest application.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
+              <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">$1K - $10K in credits</h3>
+              <p className="text-sm text-gray-500">Depending on your startup stage and the program you qualify for.</p>
+            </div>
+            <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
+              <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">200+ cloud services</h3>
+              <p className="text-sm text-gray-500">Credits cover compute, storage, databases, serverless, AI/ML, and more.</p>
+            </div>
+            <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
+              <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Your account, your credits</h3>
+              <p className="text-sm text-gray-500">Credits go directly to your cloud account. We never ask for admin access.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">HOW IT WORKS</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Three steps to cloud credits</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Simple process, big savings</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-10">
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-xl font-bold">1</div>
-              <h3 className="font-semibold text-gray-900 mb-2 text-lg">Join base261</h3>
-              <p className="text-sm text-gray-500">Create a free account in 30 seconds. No credit card, no commitment.</p>
+              <h3 className="font-semibold text-gray-900 mb-2 text-lg">Free consultation</h3>
+              <p className="text-sm text-gray-500">Book a 15-minute call. We assess your eligibility and explain which credit programs fit your startup.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-xl font-bold">2</div>
-              <h3 className="font-semibold text-gray-900 mb-2 text-lg">We guide your application</h3>
-              <p className="text-sm text-gray-500">Tell us about your startup. We help draft your cloud credits application, review it, and guide you through submission.</p>
+              <h3 className="font-semibold text-gray-900 mb-2 text-lg">We handle the application</h3>
+              <p className="text-sm text-gray-500">We help draft your application, review it for completeness, and guide you through submission.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-xl font-bold">3</div>
               <h3 className="font-semibold text-gray-900 mb-2 text-lg">Credits land in your account</h3>
-              <p className="text-sm text-gray-500">Once approved, credits appear directly on your cloud billing console. Most applications are reviewed within 5-10 business days.</p>
+              <p className="text-sm text-gray-500">Once approved, credits appear directly on your cloud billing console. Most reviews take 5-10 business days.</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Credit Programs */}
-      <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">CLOUD CREDITS</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Programs we help you access</h2>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto">Cloud providers offer credit programs for startups. We help you navigate the application process and maximize your allocation.</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <div className="bg-white rounded-xl border border-gray-200 p-8 hover:border-amber-200 transition">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">AWS Activate Founders</p>
-              <p className="text-3xl font-bold text-gray-900 mb-1">$1,000</p>
-              <p className="text-sm text-amber-500 mb-3">in cloud credits</p>
-              <p className="text-sm text-gray-500">For self-funded startups exploring cloud infrastructure for the first time.</p>
-            </div>
-            <div className="bg-white rounded-xl border-2 border-amber-300 p-8 relative">
-              <div className="absolute -top-2.5 left-4 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">Recommended</div>
-              <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">AWS Activate Portfolio</p>
-              <p className="text-3xl font-bold text-gray-900 mb-1">Up to $10,000</p>
-              <p className="text-sm text-amber-500 mb-3">in cloud credits</p>
-              <p className="text-sm text-gray-500">For startups affiliated with an Activate Provider. Higher credit amounts and faster processing.</p>
-            </div>
-          </div>
-          <p className="text-center text-sm text-gray-400 mt-8">Credits are issued directly by the cloud provider. You keep full ownership of your account at all times.</p>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">PRICING</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Success-based pricing</h2>
-            <p className="text-lg text-gray-500">Free to join. Free to apply. You only pay when your credits are approved.</p>
-          </div>
-          <div className="bg-white rounded-2xl border border-gray-200 p-10 text-center shadow-sm">
-            <h3 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2">25%</h3>
-            <p className="text-lg text-gray-500 mb-8">of approved credit amount</p>
-            <div className="bg-gray-50 rounded-xl p-6 max-w-sm mx-auto">
-              <p className="text-sm text-gray-500 mb-3">Example: You receive $10,000 in credits</p>
-              <div className="flex items-center justify-center gap-4">
-                <div><p className="text-2xl font-bold text-gray-900">$7,500</p><p className="text-xs text-gray-500">You keep</p></div>
-                <div className="text-gray-300 text-xl">+</div>
-                <div><p className="text-2xl font-bold text-amber-500">$2,500</p><p className="text-xs text-gray-500">Our fee</p></div>
-              </div>
-            </div>
-            <p className="text-sm text-gray-400 mt-6">If we can&apos;t help you get approved, you pay nothing.</p>
+          <div className="text-center mt-12">
+            <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-7 py-3.5 rounded-lg transition shadow-lg shadow-amber-500/20">
+              Book Your Free Call
+            </a>
           </div>
         </div>
       </section>
@@ -116,12 +110,12 @@ export default function CreditsPage() {
       {/* CTA */}
       <section className="py-20 px-6 bg-gray-900">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Stop paying full price for cloud</h2>
-          <p className="text-lg text-gray-400 mb-8">Check if your startup qualifies for up to $10,000 in cloud credits. It takes 30 seconds.</p>
-          <Link href="/auth/signup" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/25">
-            Check Your Eligibility
-          </Link>
-          <p className="text-sm text-gray-500 mt-4">No credit card required. Free to join and apply.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Not sure if you qualify?</h2>
+          <p className="text-lg text-gray-400 mb-8">Most early-stage startups do. Book a free 15-minute call and we&apos;ll walk you through your options.</p>
+          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/25">
+            Book a Free Consultation
+          </a>
+          <p className="text-sm text-gray-500 mt-4">No commitment. No credit card. Just a conversation.</p>
         </div>
       </section>
 
