@@ -43,7 +43,7 @@ export default function CreditsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">WHAT YOU GET</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Up to $10,000 in free cloud credits</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Starting $10,000 in free cloud credits</h2>
             <p className="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">Cloud providers like AWS offer credit programs for startups. We help you navigate the process and put together the strongest application.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -88,7 +88,7 @@ export default function CreditsPage() {
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-xl font-bold">2</div>
               <h3 className="font-semibold text-gray-900 mb-2 text-lg">We handle the application</h3>
-              <p className="text-sm text-gray-500">We help draft your application, review it for completeness, and guide you through submission.</p>
+              <p className="text-sm text-gray-500">We help you better present your startup and guide you through application best practices for submission.</p>
             </div>
             <div className="text-center">
               <div className="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 text-xl font-bold">3</div>
