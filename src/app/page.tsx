@@ -1,33 +1,22 @@
 import Link from "next/link";
+import { Nav } from "@/components/nav";
 import { ContactForm } from "@/components/contact-form";
 
 export default function HomePage() {
   return (
     <div className="bg-white text-gray-900">
-      {/* Nav */}
-      <nav className="fixed top-0 w-full bg-slate-900/95 backdrop-blur border-b border-white/10 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-white">base<span className="text-amber-500">261</span></Link>
-          <div className="hidden md:flex items-center gap-8 text-sm text-gray-300">
-            <a href="#services" className="hover:text-white transition">Our Model</a>
-            <Link href="/credits" className="hover:text-white transition">Cloud Credits</Link>
-            <a href="#contact" className="hover:text-white transition">Contact</a>
-          </div>
-          <a href="#contact" className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition">Get in Touch</a>
-        </div>
-      </nav>
+      <Nav variant="dark" />
 
       {/* Hero */}
       <section className="pt-28 pb-24 px-6 bg-slate-900 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
         <div className="max-w-5xl mx-auto relative">
-          <p className="text-amber-500 font-medium text-sm uppercase tracking-wider mb-6">Digital Innovation Studio</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl font-heading">
             We build the foundation for startups to thrive
           </h1>
           <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl">
-            base261 partners with founders and early-stage companies to incubate ideas, secure cloud infrastructure, and prepare startups for growth.
+            Incubation, cloud infrastructure, and hands-on guidance from day zero.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/credits" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/25">
@@ -44,9 +33,9 @@ export default function HomePage() {
       <section id="services" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">OUR MODEL</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 max-w-xl">A different kind of startup partner</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 max-w-xl font-heading">A different kind of startup partner</h2>
           <p className="text-lg text-gray-500 mb-14 max-w-2xl">
-            We work alongside founders from day zero, providing the infrastructure and guidance so you can focus on what matters: building your product.
+            We work alongside founders from day zero, providing the infrastructure and guidance so you can focus on building your product.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 rounded-2xl p-8">
@@ -81,29 +70,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Who We Work With */}
+      {/* About */}
       <section className="py-24 px-6 bg-gray-50">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">WHO WE WORK WITH</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Built for founders at every stage</h2>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto">Whether you&apos;re exploring an idea or scaling your infrastructure, we meet you where you are.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <p className="text-amber-500 text-xs font-bold uppercase tracking-wide mb-4">Idea Stage</p>
-              <h3 className="font-semibold text-gray-900 text-lg mb-3">Founders with a vision</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">You have an idea but need help validating it. We provide the framework, tools, and infrastructure to go from concept to prototype.</p>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">ABOUT US</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-heading">Built by operators, for founders</h2>
+              <p className="text-gray-500 leading-relaxed mb-4">
+                base261 was founded by a team with deep roots in cloud infrastructure and startup operations. We&apos;ve seen firsthand how the right resources at the right time can change a startup&apos;s trajectory.
+              </p>
+              <p className="text-gray-500 leading-relaxed">
+                Our mission is simple: reduce the friction between a great idea and a running business. Whether that means securing cloud credits, reviewing your architecture, or helping you prepare for your next stage of growth.
+              </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <p className="text-amber-500 text-xs font-bold uppercase tracking-wide mb-4">Building</p>
-              <h3 className="font-semibold text-gray-900 text-lg mb-3">Startups in development</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">You&apos;re building your product and need cloud credits to keep costs down. We handle applications and help you optimize your stack.</p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <p className="text-amber-500 text-xs font-bold uppercase tracking-wide mb-4">Scaling</p>
-              <h3 className="font-semibold text-gray-900 text-lg mb-3">Companies ready to grow</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">You have traction and need to scale efficiently. We help with infrastructure planning, cost optimization, and growth partnerships.</p>
+            <div className="bg-white rounded-2xl border border-gray-200 p-8">
+              <div className="space-y-6">
+                <div>
+                  <p className="text-3xl font-bold text-gray-900 font-heading">2026</p>
+                  <p className="text-sm text-gray-500">Founded</p>
+                </div>
+                <div className="border-t border-gray-100 pt-6">
+                  <p className="text-3xl font-bold text-amber-500 font-heading">$10K+</p>
+                  <p className="text-sm text-gray-500">Cloud credits per startup</p>
+                </div>
+                <div className="border-t border-gray-100 pt-6">
+                  <p className="text-3xl font-bold text-gray-900 font-heading">4</p>
+                  <p className="text-sm text-gray-500">Core services for early-stage startups</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +110,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
               <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">GET IN TOUCH</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to get a new idea off the ground?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">Ready to get a new idea off the ground?</h2>
               <p className="text-gray-500 leading-relaxed">
                 No matter the size of the idea or time in market, we&apos;re ready to incubate new ideas and optimize for your next move.
               </p>

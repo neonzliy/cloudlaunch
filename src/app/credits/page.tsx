@@ -1,22 +1,12 @@
 import Link from "next/link";
+import { Nav } from "@/components/nav";
 import { ContactForm } from "@/components/contact-form";
 import { CreditsFAQ } from "@/components/faq-section";
 
 export default function CreditsPage() {
   return (
     <div className="bg-white text-gray-900">
-      {/* Nav */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur border-b border-gray-100 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-gray-900">base<span className="text-amber-500">261</span></Link>
-          <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
-            <Link href="/#services" className="hover:text-gray-900 transition">Our Model</Link>
-            <Link href="/credits" className="text-gray-900 font-medium">Cloud Credits</Link>
-            <a href="#contact" className="hover:text-gray-900 transition">Contact</a>
-          </div>
-          <a href="#contact" className="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition">Free Consultation</a>
-        </div>
-      </nav>
+      <Nav variant="light" />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-6">
@@ -25,8 +15,8 @@ export default function CreditsPage() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
             Free consultation, no commitment
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-            Let us help you get cloud credits for your startup
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6 font-heading">
+            Cloud credits to fuel your startup
           </h1>
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
             Most early-stage startups qualify for thousands in free cloud credits but never apply. We walk you through the process and handle the heavy lifting.
@@ -43,7 +33,7 @@ export default function CreditsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">WHAT YOU GET</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Starting $10,000 in free cloud credits</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-heading">Starting $10,000 in free cloud credits</h2>
             <p className="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">Cloud providers like AWS offer credit programs for startups. We help you navigate the process and put together the strongest application.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -77,7 +67,7 @@ export default function CreditsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">HOW IT WORKS</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Simple process, big savings</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 font-heading">Simple process, big savings</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-10">
             <div className="text-center">
@@ -107,7 +97,7 @@ export default function CreditsPage() {
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
               <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">GET IN TOUCH</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Interested in cloud credits?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">Interested in cloud credits?</h2>
               <p className="text-gray-500 leading-relaxed mb-6">
                 Tell us about your startup and we&apos;ll get back to you with a personalized assessment of which credit programs you qualify for.
               </p>
