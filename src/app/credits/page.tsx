@@ -5,6 +5,7 @@ import { ContactForm } from "@/components/contact-form";
 import { CreditsFAQ } from "@/components/faq-section";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://base261.com/credits" },
   title: "Cloud Credits",
   description: "Get up to $10,000 in free cloud infrastructure credits for your startup. We guide you through the application process.",
 };
