@@ -16,7 +16,7 @@ export function Nav({ variant = "dark" }: { variant?: "dark" | "light" }) {
     <nav className={`fixed top-0 w-full ${navBg} backdrop-blur-md border-b z-50`}>
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link href="/" className={`text-lg font-bold ${logo} tracking-tight`}>
-          base<span className="text-teal-500">261</span>
+          base<span className="text-white">261</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[13px]">
@@ -25,7 +25,7 @@ export function Nav({ variant = "dark" }: { variant?: "dark" | "light" }) {
           <a href="/#contact" className={`${linkColor} transition`}>Contact</a>
         </div>
         <div className="hidden md:block">
-          <a href="/#contact" className={`text-[13px] font-medium transition ${isDark ? "text-white hover:text-teal-400" : "text-[#1a1a1a] hover:text-teal-500"}`}>
+          <a href="/#contact" className={`text-[13px] font-medium transition ${isDark ? "text-white hover:text-gray-300" : "text-[#1a1a1a] hover:text-white"}`}>
             Get in Touch &rarr;
           </a>
         </div>

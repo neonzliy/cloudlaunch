@@ -17,7 +17,7 @@ export default function HomePage() {
             base261 is a digital innovation studio. We partner with founders to incubate ideas, secure cloud infrastructure, and prepare startups for growth.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/credits" className="inline-flex items-center gap-2 text-teal-400 font-medium hover:text-teal-300 transition">
+            <Link href="/credits" className="inline-flex items-center gap-2 text-white font-medium hover:text-gray-300 transition">
               Explore Cloud Credits
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
@@ -47,7 +47,7 @@ export default function HomePage() {
                 <p className="font-mono-label !text-gray-600 mb-4">Flagship Service</p>
                 <h3 className="text-2xl md:text-4xl font-bold text-white mb-5 font-heading">Cloud Credits</h3>
                 <p className="text-gray-400 leading-relaxed mb-8 max-w-lg">We help startups access starting $10,000 in cloud infrastructure credits, guiding the credit application process so you can build without worrying about bills.</p>
-                <Link href="/credits" className="inline-flex items-center gap-2 text-teal-400 font-medium hover:text-teal-300 transition text-sm">
+                <Link href="/credits" className="inline-flex items-center gap-2 text-white font-medium hover:text-gray-300 transition text-sm">
                   Learn more
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                 </Link>
@@ -132,7 +132,7 @@ export default function HomePage() {
                 </p>
                 <div>
                   <p className="font-mono-label mb-2">Prefer email?</p>
-                  <a href="mailto:team@base261.com" className="text-[#1a1a1a] font-medium hover:text-teal-500 transition">team@base261.com</a>
+                  <a href="mailto:team@base261.com" className="text-[#1a1a1a] font-medium hover:text-white transition">team@base261.com</a>
                 </div>
               </div>
               <ContactForm />
@@ -146,7 +146,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-4 gap-10 mb-16">
             <div className="md:col-span-2">
-              <div className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-teal-500">261</span></div>
+              <div className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-white">261</span></div>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">A digital innovation studio that incubates ideas, secures cloud infrastructure, and prepares startups for growth.</p>
             </div>
             <div>
