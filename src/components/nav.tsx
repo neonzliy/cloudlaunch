@@ -10,7 +10,7 @@ export function Nav({ variant = "light" }: { variant?: "dark" | "light" }) {
     <nav className="fixed top-0 w-full bg-[#fafaf8]/95 backdrop-blur-md border-b border-gray-200/60 z-50">
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link href="/" className="text-lg font-bold text-[#1a1a1a] tracking-tight">
-          base<span className="text-teal-600">261</span>
+          base<span className="text-[#c27c3e]">261</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[13px]">
@@ -18,7 +18,7 @@ export function Nav({ variant = "light" }: { variant?: "dark" | "light" }) {
           <Link href="/credits" className="text-gray-400 hover:text-[#1a1a1a] transition">Cloud Credits</Link>
         </div>
         <div className="hidden md:block">
-          <a href="/#contact" className="text-[13px] font-medium text-[#1a1a1a] hover:text-teal-600 transition">
+          <a href="/#contact" className="text-[13px] font-medium text-[#1a1a1a] hover:text-[#c27c3e] transition">
             Get in touch
           </a>
         </div>

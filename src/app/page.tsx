@@ -180,14 +180,14 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-10 mb-16">
             <div>
-              <p className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-teal-500">261</span></p>
+              <p className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-[#c27c3e]">261</span></p>
               <p className="text-gray-600 text-sm leading-relaxed">Digital Innovation Studio</p>
               <a href="mailto:team@base261.com" className="text-gray-500 text-sm hover:text-white transition block mt-2">team@base261.com</a>
             </div>
             <div className="flex items-center justify-center">
               {/* Center logo mark */}
               <svg width="40" height="40" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="6" fill="#0d9488" />
+                <rect width="28" height="28" rx="6" fill="#c27c3e" />
                 <rect x="8" y="8" width="4" height="4" fill="white" fillOpacity="0.9" />
                 <rect x="8" y="16" width="4" height="4" fill="white" fillOpacity="0.9" />
                 <rect x="16" y="12" width="4" height="4" fill="white" fillOpacity="0.6" />

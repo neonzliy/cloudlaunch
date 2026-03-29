@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap');
 
 :root {
-  --accent: #0d9488;
-  --accent-light: #14b8a6;
-  --accent-muted: #0d9488;
+  --accent: #c27c3e;
+  --accent-light: #d4915a;
+  --accent-muted: #c27c3e;
 }
 
 body {
