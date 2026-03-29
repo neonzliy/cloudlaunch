@@ -5,7 +5,7 @@ const CREDITS_FAQS = [
   },
   {
     q: "How does the application process work?",
-    a: "After you join base261, you tell us about your startup and your cloud usage. We help draft your application, review it for completeness, and guide you through submission. The cloud provider reviews and approves all applications.",
+    a: "After you reach out, we learn about your startup and your cloud usage. We help draft your application, review it for completeness, and guide you through submission. The cloud provider reviews and approves all applications.",
   },
   {
     q: "Will I keep full ownership of my cloud account?",
@@ -27,22 +27,24 @@ const CREDITS_FAQS = [
 
 export function CreditsFAQ() {
   return (
-    <section id="faq" className="py-20 px-6">
-      <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-14">
-          <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">FAQ</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Common questions</h2>
-        </div>
-        <div className="space-y-3">
-          {CREDITS_FAQS.map((faq) => (
-            <details key={faq.q} className="group bg-white border border-gray-200 rounded-xl hover:shadow-sm transition">
-              <summary className="flex items-center justify-between p-6 cursor-pointer font-semibold text-gray-900 text-[15px]">
-                {faq.q}
-                <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-              </summary>
-              <div className="px-6 pb-6 text-sm text-gray-500 leading-relaxed">{faq.a}</div>
-            </details>
-          ))}
+    <section id="faq" className="py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        <div className="border-t border-gray-300 pt-20">
+          <div className="mb-16">
+            <p className="font-mono-label mb-4">FAQ</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] font-heading">Common questions</h2>
+          </div>
+          <div className="space-y-0">
+            {CREDITS_FAQS.map((faq) => (
+              <details key={faq.q} className="group border-b border-gray-200">
+                <summary className="flex items-center justify-between py-6 cursor-pointer font-medium text-[#1a1a1a] text-[15px] hover:text-amber-500 transition">
+                  {faq.q}
+                  <svg className="w-4 h-4 text-gray-400 group-open:rotate-45 transition-transform flex-shrink-0 ml-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+                </summary>
+                <div className="pb-6 text-[15px] text-gray-500 leading-relaxed max-w-2xl">{faq.a}</div>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
     </section>
