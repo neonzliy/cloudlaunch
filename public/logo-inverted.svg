@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,700&amp;display=swap');
+  </style>
+  <text y="38" fill="#fafaf8" font-family="'DM Sans', sans-serif" font-size="42" letter-spacing="-0.02em">
+    <tspan font-weight="700">base</tspan><tspan font-weight="300" dx="-1">261</tspan>
+  </text>
+</svg>

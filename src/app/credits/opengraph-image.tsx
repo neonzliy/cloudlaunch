@@ -25,8 +25,8 @@ export default function Image() {
         <div style={{ color: "white", fontSize: 64, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24, maxWidth: 800 }}>
           Starting $10,000 in free cloud credits
         </div>
-        <div style={{ color: "#999", fontSize: 24 }}>
-          base261
+        <div style={{ color: "#999", fontSize: 24, display: "flex" }}>
+          <span style={{ fontWeight: 700 }}>base</span><span style={{ fontWeight: 300 }}>261</span>
         </div>
       </div>
     ),

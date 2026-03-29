@@ -148,7 +148,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-4 gap-10 mb-16">
             <div className="md:col-span-2">
-              <div className="text-white font-bold text-lg mb-4 tracking-tight">base261</div>
+              <div className="text-white text-lg mb-4 tracking-tight"><span className="font-bold">base</span><span className="font-light">261</span></div>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">A digital innovation studio that incubates ideas, secures cloud infrastructure, and prepares startups for growth.</p>
             </div>
             <div>

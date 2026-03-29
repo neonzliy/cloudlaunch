@@ -15,8 +15,8 @@ export function Nav({ variant = "dark" }: { variant?: "dark" | "light" }) {
   return (
     <nav className={`fixed top-0 w-full ${navBg} backdrop-blur-md border-b z-50`}>
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-        <Link href="/" className={`text-lg font-bold ${logo} tracking-tight`}>
-          base261
+        <Link href="/" className={`text-lg ${logo} tracking-tight`}>
+          <span className="font-bold">base</span><span className="font-light">261</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[13px]">

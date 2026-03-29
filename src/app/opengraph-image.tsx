@@ -19,8 +19,8 @@ export default function Image() {
           padding: "80px",
         }}
       >
-        <div style={{ color: "white", fontSize: 72, fontWeight: 700, letterSpacing: "-0.02em", marginBottom: 24 }}>
-          base261
+        <div style={{ color: "white", fontSize: 72, letterSpacing: "-0.02em", marginBottom: 24, display: "flex" }}>
+          <span style={{ fontWeight: 700 }}>base</span><span style={{ fontWeight: 300 }}>261</span>
         </div>
         <div style={{ color: "#999", fontSize: 28, maxWidth: 600 }}>
           A digital innovation studio that incubates ideas, secures cloud infrastructure, and prepares startups for growth.
