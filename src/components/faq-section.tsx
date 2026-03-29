@@ -37,7 +37,7 @@ export function CreditsFAQ() {
           <div className="space-y-0">
             {CREDITS_FAQS.map((faq) => (
               <details key={faq.q} className="group border-b border-gray-200">
-                <summary className="flex items-center justify-between py-6 cursor-pointer font-medium text-[#1a1a1a] text-[15px] hover:text-amber-500 transition">
+                <summary className="flex items-center justify-between py-6 cursor-pointer font-medium text-[#1a1a1a] text-[15px] hover:text-teal-600 transition">
                   {faq.q}
                   <svg className="w-4 h-4 text-gray-400 group-open:rotate-45 transition-transform flex-shrink-0 ml-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
                 </summary>

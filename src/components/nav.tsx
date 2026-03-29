@@ -3,35 +3,28 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export function Nav({ variant = "dark" }: { variant?: "dark" | "light" }) {
+export function Nav({ variant = "light" }: { variant?: "dark" | "light" }) {
   const [open, setOpen] = useState(false);
 
-  const isDark = variant === "dark";
-  const navBg = isDark ? "bg-[#1a1a1a]/95 border-white/10" : "bg-[#fafaf8]/95 border-gray-200/60";
-  const logo = isDark ? "text-white" : "text-[#1a1a1a]";
-  const linkColor = isDark ? "text-gray-400 hover:text-white" : "text-gray-400 hover:text-[#1a1a1a]";
-  const mobileBg = isDark ? "bg-[#1a1a1a]" : "bg-[#fafaf8]";
-
   return (
-    <nav className={`fixed top-0 w-full ${navBg} backdrop-blur-md border-b z-50`}>
+    <nav className="fixed top-0 w-full bg-[#fafaf8]/95 backdrop-blur-md border-b border-gray-200/60 z-50">
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-        <Link href="/" className={`text-lg font-bold ${logo} tracking-tight`}>
-          base<span className="text-amber-500">261</span>
+        <Link href="/" className="text-lg font-bold text-[#1a1a1a] tracking-tight">
+          base<span className="text-teal-600">261</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[13px]">
-          <Link href="/#services" className={`${linkColor} transition`}>Our Model</Link>
-          <Link href="/credits" className={`${linkColor} transition`}>Cloud Credits</Link>
-          <a href="/#contact" className={`${linkColor} transition`}>Contact</a>
+          <Link href="/" className="text-gray-400 hover:text-[#1a1a1a] transition">Home</Link>
+          <Link href="/credits" className="text-gray-400 hover:text-[#1a1a1a] transition">Cloud Credits</Link>
         </div>
         <div className="hidden md:block">
-          <a href="/#contact" className={`text-[13px] font-medium transition ${isDark ? "text-white hover:text-amber-400" : "text-[#1a1a1a] hover:text-amber-500"}`}>
-            Get in Touch &rarr;
+          <a href="/#contact" className="text-[13px] font-medium text-[#1a1a1a] hover:text-teal-600 transition">
+            Get in touch
           </a>
         </div>
 
         <button onClick={() => setOpen(!open)} className="md:hidden p-2" aria-label="Menu">
-          <svg className={`w-5 h-5 ${isDark ? "text-white" : "text-[#1a1a1a]"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 text-[#1a1a1a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {open
               ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
               : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
@@ -41,10 +34,10 @@ export function Nav({ variant = "dark" }: { variant?: "dark" | "light" }) {
       </div>
 
       {open && (
-        <div className={`md:hidden ${mobileBg} border-t ${isDark ? "border-white/10" : "border-gray-200/60"} px-6 py-5 space-y-4`}>
-          <Link href="/#services" onClick={() => setOpen(false)} className={`block text-sm ${linkColor} transition`}>Our Model</Link>
-          <Link href="/credits" onClick={() => setOpen(false)} className={`block text-sm ${linkColor} transition`}>Cloud Credits</Link>
-          <a href="/#contact" onClick={() => setOpen(false)} className={`block text-sm ${linkColor} transition`}>Contact</a>
+        <div className="md:hidden bg-[#fafaf8] border-t border-gray-200/60 px-6 py-5 space-y-4">
+          <Link href="/" onClick={() => setOpen(false)} className="block text-sm text-gray-400 hover:text-[#1a1a1a] transition">Home</Link>
+          <Link href="/credits" onClick={() => setOpen(false)} className="block text-sm text-gray-400 hover:text-[#1a1a1a] transition">Cloud Credits</Link>
+          <a href="/#contact" onClick={() => setOpen(false)} className="block text-sm text-[#1a1a1a] font-medium">Get in touch</a>
         </div>
       )}
     </nav>

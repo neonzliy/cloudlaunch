@@ -18,7 +18,7 @@ export default function CreditsPage() {
           <p className="text-lg text-gray-500 mb-10 max-w-xl leading-relaxed">
             Most early-stage startups qualify for thousands in free cloud credits but never apply. We walk you through the process and handle the heavy lifting.
           </p>
-          <a href="#contact" className="inline-flex items-center gap-2 text-amber-500 font-medium hover:text-amber-600 transition">
+          <a href="#contact" className="inline-flex items-center gap-2 text-teal-600 font-medium hover:text-teal-700 transition">
             Get a Free Consultation
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </a>
@@ -123,7 +123,7 @@ export default function CreditsPage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-4 gap-10 mb-16">
             <div className="md:col-span-2">
-              <div className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-amber-500">261</span></div>
+              <div className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-teal-600">261</span></div>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">A digital innovation studio that incubates ideas, secures cloud infrastructure, and prepares startups for growth.</p>
             </div>
             <div>

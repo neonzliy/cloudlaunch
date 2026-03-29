@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap');
 
+:root {
+  --accent: #0d9488;
+  --accent-light: #14b8a6;
+  --accent-muted: #0d9488;
+}
+
 body {
   background: #fafaf8;
   color: #1a1a1a;
@@ -20,6 +26,18 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #999;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-accent-light {
+  color: var(--accent-light);
+}
+
+.bg-accent {
+  background-color: var(--accent);
 }
 
 input, select, textarea {
