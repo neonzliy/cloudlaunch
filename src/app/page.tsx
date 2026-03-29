@@ -4,208 +4,133 @@ import { ContactForm } from "@/components/contact-form";
 
 export default function HomePage() {
   return (
-    <div className="bg-[#fafaf8] text-[#1a1a1a]">
-      <Nav variant="light" />
+    <div className="bg-white text-gray-900">
+      <Nav variant="dark" />
 
-      {/* Hero - centered like Invoke */}
-      <section className="pt-40 pb-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.0] mb-8 font-heading">
-            Novel Solutions for Growing Startups
+      {/* Hero */}
+      <section className="pt-28 pb-24 px-6 bg-slate-900 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="max-w-5xl mx-auto relative">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl font-heading">
+            We build the foundation for startups to thrive
           </h1>
-          <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            We are a digital innovation studio. We work with founders, entrepreneurs and early-stage companies to incubate ideas, secure cloud infrastructure, and prepare startups for growth.
+          <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl">
+            Incubation, cloud infrastructure, and hands-on guidance from day zero.
           </p>
-        </div>
-      </section>
-
-      {/* Services grid - like Invoke case studies */}
-      <section className="pb-32 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/credits" className="group block bg-white border border-gray-200 rounded-xl p-8 hover:border-gray-400 transition">
-              <div className="flex items-start justify-between mb-16">
-                <div>
-                  <p className="font-mono-label mb-1">Flagship</p>
-                </div>
-                <svg className="w-5 h-5 text-gray-300 group-hover:text-[#1a1a1a] transition -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-2 font-heading">Cloud Credits</h3>
-              <p className="text-gray-500 text-[15px]">Starting $10,000 in cloud infrastructure credits for early-stage startups.</p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link href="/credits" className="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition shadow-lg shadow-amber-500/25">
+              Explore Cloud Credits
             </Link>
-            <div className="bg-white border border-gray-200 rounded-xl p-8">
-              <div className="flex items-start justify-between mb-16">
-                <div>
-                  <p className="font-mono-label mb-1">Service</p>
-                </div>
-              </div>
-              <h3 className="text-2xl font-bold mb-2 font-heading">Incubation</h3>
-              <p className="text-gray-500 text-[15px]">From market research to technical architecture, we provide the scaffolding for your first product.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-8">
-              <div className="flex items-start justify-between mb-16">
-                <div>
-                  <p className="font-mono-label mb-1">Service</p>
-                </div>
-              </div>
-              <h3 className="text-2xl font-bold mb-2 font-heading">Pre-underwriting</h3>
-              <p className="text-gray-500 text-[15px]">We assess startup readiness and prepare applications for credit programs and early-stage funding.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-8">
-              <div className="flex items-start justify-between mb-16">
-                <div>
-                  <p className="font-mono-label mb-1">Service</p>
-                </div>
-              </div>
-              <h3 className="text-2xl font-bold mb-2 font-heading">Growth Support</h3>
-              <p className="text-gray-500 text-[15px]">Cloud spend optimization, infrastructure planning, and partnerships to help you scale.</p>
-            </div>
+            <a href="#services" className="inline-flex items-center justify-center border border-white/20 hover:border-white/40 text-white font-semibold px-8 py-4 rounded-lg text-lg transition">
+              How We Work
+            </a>
           </div>
         </div>
       </section>
 
-      {/* History / About - like Invoke "since 2000" */}
-      <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold font-heading leading-tight mb-12 max-w-3xl">
-            We&apos;ve been building alongside founders since day one
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border border-gray-200 rounded-xl aspect-[4/3] flex items-center justify-center">
-              <p className="text-gray-300 text-sm font-mono-label">Team photo coming soon</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl aspect-[4/3] flex items-center justify-center">
-              <p className="text-gray-300 text-sm font-mono-label">Office photo coming soon</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl aspect-[4/3] flex items-center justify-center">
-              <p className="text-gray-300 text-sm font-mono-label">Workshop photo coming soon</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Who we work with - like Invoke 3 client types */}
-      <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="border-t border-gray-300 pt-16">
-            <div className="grid md:grid-cols-3 gap-12">
-              <div>
-                <h3 className="text-xl font-bold mb-3 font-heading">Early-Stage Founders</h3>
-                <p className="text-gray-500 text-[15px] leading-relaxed">You have an idea and need help bringing it to life. We provide the technical foundation, cloud infrastructure, and guidance to go from concept to prototype.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-3 font-heading">Startups in Development</h3>
-                <p className="text-gray-500 text-[15px] leading-relaxed">You&apos;re building your product and need cloud credits to keep costs down. We handle credit applications and help you optimize your infrastructure.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-3 font-heading">Scaling Companies</h3>
-                <p className="text-gray-500 text-[15px] leading-relaxed">You have traction and need to scale efficiently. We help with infrastructure planning, cost optimization, and preparing for your next stage of growth.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our approach - like Invoke iterative stages */}
+      {/* Our Model */}
       <section id="services" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="border-t border-gray-300 pt-16 mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading leading-tight max-w-3xl">
-              Validation and iterative guidance at every stage, from idea to growth
-            </h2>
+          <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">OUR MODEL</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 max-w-xl font-heading">A different kind of startup partner</h2>
+          <p className="text-lg text-gray-500 mb-14 max-w-2xl">
+            We work alongside founders from day zero, providing the infrastructure and guidance so you can focus on building your product.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-5">
+                <svg className="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 text-lg mb-2">Incubation</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">We help founders validate ideas and build from scratch. From market research to technical architecture, we provide the scaffolding for your first product.</p>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-5">
+                <svg className="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 text-lg mb-2">Cloud Credits</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">We help startups access starting $10,000 in cloud infrastructure credits, guiding the credit application process so you can build without worrying about bills.</p>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-5">
+                <svg className="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 text-lg mb-2">Pre-underwriting</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">We assess startup readiness and prepare applications for cloud credit programs and early-stage funding, increasing your chances of approval.</p>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-5">
+                <svg className="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 text-lg mb-2">Growth Support</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">From optimizing cloud spend to connecting you with the right partners, we help startups scale their infrastructure and operations efficiently.</p>
+            </div>
           </div>
-          <div className="space-y-16">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="bg-white border border-gray-200 rounded-xl aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-5xl font-bold font-heading text-gray-200">01</p>
-                  <p className="text-gray-300 text-sm mt-2">Consultation</p>
-                </div>
-              </div>
-              <div>
-                <p className="font-mono-label mb-3">Step 01</p>
-                <h3 className="text-2xl font-bold mb-4 font-heading">Free Consultation</h3>
-                <p className="text-gray-500 text-[15px] leading-relaxed">We start with a conversation. Tell us about your startup, your stage, and your needs. We assess your eligibility for cloud credits and map out a plan.</p>
-              </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="py-24 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">ABOUT US</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-heading">Built by operators, for founders</h2>
+              <p className="text-gray-500 leading-relaxed mb-4">
+                base261 was founded by a team with deep roots in cloud infrastructure and startup operations. We&apos;ve seen firsthand how the right resources at the right time can change a startup&apos;s trajectory.
+              </p>
+              <p className="text-gray-500 leading-relaxed">
+                Our mission is simple: reduce the friction between a great idea and a running business. Whether that means securing cloud credits, reviewing your architecture, or helping you prepare for your next stage of growth.
+              </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="md:order-2 bg-white border border-gray-200 rounded-xl aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-5xl font-bold font-heading text-gray-200">02</p>
-                  <p className="text-gray-300 text-sm mt-2">Application</p>
+            <div className="bg-white rounded-2xl border border-gray-200 p-8">
+              <div className="space-y-6">
+                <div>
+                  <p className="text-3xl font-bold text-gray-900 font-heading">2026</p>
+                  <p className="text-sm text-gray-500">Founded</p>
                 </div>
-              </div>
-              <div className="md:order-1">
-                <p className="font-mono-label mb-3">Step 02</p>
-                <h3 className="text-2xl font-bold mb-4 font-heading">Application & Preparation</h3>
-                <p className="text-gray-500 text-[15px] leading-relaxed">We help you better present your startup and guide you through application best practices. We review everything for completeness before submission.</p>
-              </div>
-            </div>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="bg-white border border-gray-200 rounded-xl aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-5xl font-bold font-heading text-gray-200">03</p>
-                  <p className="text-gray-300 text-sm mt-2">Launch</p>
+                <div className="border-t border-gray-100 pt-6">
+                  <p className="text-3xl font-bold text-amber-500 font-heading">$10K+</p>
+                  <p className="text-sm text-gray-500">Cloud credits per startup</p>
                 </div>
-              </div>
-              <div>
-                <p className="font-mono-label mb-3">Step 03</p>
-                <h3 className="text-2xl font-bold mb-4 font-heading">Credits & Growth</h3>
-                <p className="text-gray-500 text-[15px] leading-relaxed">Once approved, credits land directly in your cloud account. We continue supporting your infrastructure optimization and help you prepare for what comes next.</p>
+                <div className="border-t border-gray-100 pt-6">
+                  <p className="text-3xl font-bold text-gray-900 font-heading">4</p>
+                  <p className="text-sm text-gray-500">Core services for early-stage startups</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact - like Invoke */}
+      {/* Contact Form */}
       <section id="contact" className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="border-t border-gray-300 pt-16">
-            <div className="grid md:grid-cols-2 gap-16 items-start">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading">Looking for a digital innovation studio to bring your ideas to life?</h2>
-                <p className="text-gray-500 leading-relaxed text-[15px]">
-                  No matter the size of the idea or time in market, we&apos;re ready to incubate new ideas and optimize for your next move.
-                </p>
-              </div>
-              <ContactForm />
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <p className="text-amber-500 font-semibold text-sm uppercase tracking-wide mb-3">GET IN TOUCH</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">Ready to get a new idea off the ground?</h2>
+              <p className="text-gray-500 leading-relaxed">
+                No matter the size of the idea or time in market, we&apos;re ready to incubate new ideas and optimize for your next move.
+              </p>
             </div>
+            <ContactForm />
           </div>
         </div>
       </section>
 
-      {/* Footer - like Invoke */}
-      <footer className="bg-[#1a1a1a] py-16 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-10 mb-16">
-            <div>
-              <p className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-[#c27c3e]">261</span></p>
-              <p className="text-gray-600 text-sm leading-relaxed">Digital Innovation Studio</p>
-              <a href="mailto:team@base261.com" className="text-gray-500 text-sm hover:text-white transition block mt-2">team@base261.com</a>
-            </div>
-            <div className="flex items-center justify-center">
-              {/* Center logo mark */}
-              <svg width="40" height="40" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="28" height="28" rx="6" fill="#c27c3e" />
-                <rect x="8" y="8" width="4" height="4" fill="white" fillOpacity="0.9" />
-                <rect x="8" y="16" width="4" height="4" fill="white" fillOpacity="0.9" />
-                <rect x="16" y="12" width="4" height="4" fill="white" fillOpacity="0.6" />
-                <rect x="16" y="8" width="4" height="4" fill="white" fillOpacity="0.4" />
-                <rect x="16" y="16" width="4" height="4" fill="white" fillOpacity="0.4" />
-              </svg>
-            </div>
-            <div className="md:text-right">
-              <a href="/#contact" className="text-gray-500 text-sm hover:text-white transition block mb-2">Get in touch</a>
-              <div className="flex md:justify-end gap-4 mt-4">
-                <Link href="/" className="text-gray-600 text-sm hover:text-white transition">Home</Link>
-                <Link href="/credits" className="text-gray-600 text-sm hover:text-white transition">Cloud Credits</Link>
-              </div>
-            </div>
+      {/* Footer */}
+      <footer className="bg-slate-900 py-10 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="text-white font-bold text-xl">base<span className="text-amber-500">261</span></div>
+          <div className="flex gap-6 text-sm text-gray-400">
+            <a href="#services" className="hover:text-white transition">Our Model</a>
+            <Link href="/credits" className="hover:text-white transition">Cloud Credits</Link>
+            <a href="#contact" className="hover:text-white transition">Contact</a>
+            <a href="mailto:team@base261.com" className="hover:text-white transition">team@base261.com</a>
           </div>
-          <div className="border-t border-white/10 pt-8">
-            <p className="text-xs text-gray-700">&copy; 2026 base261 Inc.</p>
-          </div>
+          <div className="text-sm text-gray-500">&copy; 2026 base261. All rights reserved.</div>
         </div>
       </footer>
     </div>
