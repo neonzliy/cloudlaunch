@@ -132,7 +132,7 @@ export default function HomePage() {
                 </p>
                 <div>
                   <p className="font-mono-label mb-2">Prefer email?</p>
-                  <a href="mailto:team@base261.com" className="text-[#1a1a1a] font-medium hover:text-white transition">team@base261.com</a>
+                  <a href="mailto:team@base261.com" className="text-[#1a1a1a] font-medium hover:text-gray-400 transition">team@base261.com</a>
                 </div>
               </div>
               <ContactForm />
@@ -146,7 +146,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-4 gap-10 mb-16">
             <div className="md:col-span-2">
-              <div className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-white">261</span></div>
+              <div className="text-white font-bold text-lg mb-4 tracking-tight">base261</div>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">A digital innovation studio that incubates ideas, secures cloud infrastructure, and prepares startups for growth.</p>
             </div>
             <div>
@@ -160,7 +160,7 @@ export default function HomePage() {
             <div>
               <p className="font-mono-label !text-gray-600 mb-5">Connect</p>
               <div className="space-y-3">
-                <a href="mailto:team@base261.com" className="block text-sm text-gray-500 hover:text-white transition">team@base261.com</a>
+                <a href="mailto:team@base261.com" className="block text-sm text-gray-500 hover:text-gray-400 transition">team@base261.com</a>
               </div>
             </div>
           </div>

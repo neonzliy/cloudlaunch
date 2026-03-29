@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cloud Credits",
+  description: "Get up to $10,000 in free cloud infrastructure credits for your startup. We guide you through the application process.",
+};
 import Link from "next/link";
 import { Nav } from "@/components/nav";
 import { ContactForm } from "@/components/contact-form";
@@ -123,7 +129,7 @@ export default function CreditsPage() {
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-4 gap-10 mb-16">
             <div className="md:col-span-2">
-              <div className="text-white font-bold text-lg mb-4 tracking-tight">base<span className="text-white">261</span></div>
+              <div className="text-white font-bold text-lg mb-4 tracking-tight">base261</div>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">A digital innovation studio that incubates ideas, secures cloud infrastructure, and prepares startups for growth.</p>
             </div>
             <div>
