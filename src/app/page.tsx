@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { Nav } from "@/components/nav";
 import { ContactForm } from "@/components/contact-form";
+import { JsonLd } from "./page-jsonld";
 
 export default function HomePage() {
   return (
     <div className="bg-[#fafaf8] text-[#1a1a1a]">
       <Nav variant="dark" />
+      <JsonLd />
 
       {/* Hero - confident text only */}
       <section className="pt-32 pb-32 md:pt-40 md:pb-40 px-6 bg-[#1a1a1a]">
