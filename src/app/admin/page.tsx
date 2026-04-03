@@ -37,6 +37,8 @@ export default async function AdminPage() {
             <span className="text-xs bg-red-100 text-red-700 font-semibold px-2 py-0.5 rounded">Admin</span>
           </div>
           <div className="flex items-center gap-4">
+            <Link href="/admin" className="text-sm text-gray-900 font-medium">Applications</Link>
+            <Link href="/admin/engagements" className="text-sm text-gray-500 hover:text-gray-700">Engagements</Link>
             <Link href="/dashboard" className="text-sm text-gray-500 hover:text-gray-700">Dashboard</Link>
             <span className="text-sm text-gray-500">{user.email}</span>
             <SignOutButton />
